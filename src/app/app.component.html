@@ -3,14 +3,14 @@
     <div class="col-xs-12">
       <h1>My Quate</h1>
       <div class="interesting">
-        <app-quote 
+        <app-quote
         (click)="isFavourite=!isFavourite"
-        
+
         [ngStyle]="{'backgroundColor':isFavourite?'red':'green'}"
         [ngClass]="{'favorite super-favorite':isFavourite}"></app-quote>
       </div>
       <button (click)="onShowBoring(boringBlock)" class="btn btn-primary">Show boring Quotes</button>
-      <div class="boring" #boringBlock>
+      <div class="boring" #boringBlock style="display:none">
         <div class="very-boring">
           <app-quote></app-quote>
         </div>
